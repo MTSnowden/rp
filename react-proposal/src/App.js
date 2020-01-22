@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Router from './Router'
 import Nav from './components/Nav'
 
