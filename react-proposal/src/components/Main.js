@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import homeBanner from '../img/frontera-home.jpg'
 
 class Main extends Component {
     componentDidMount() {
@@ -7,10 +8,22 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <p>Main Page!</p>
+            <img className="home-banner" 
+                 style={homeBannerStyle} 
+                 src={homeBanner} />   
             </div>
         )
+    
     }
+    
+}
+
+const homeBannerStyle = {
+    margin: '0px',
+    padding: '0px',
+    width: '100%', 
+    backgroundColor: '#ffffff'
 }
 
 export default Main
+
