@@ -10,63 +10,69 @@ export default class Nav extends Component {
     render(){
         return (
             
-                <div className="navbar-nav bg-dark">
+                
                     
-                    <nav className="navbar-nav"> 
+                    <nav className="navbar navbar-expand-md navbar-dark bg-dark"> 
 
-                        <div className="navbar-header">
-                        <a href="https://www.nsf.gov/" className="navbar-left">
-                            <img
-                                alt=""
-                                src={NSF}
-                                width="40"
-                                height="40"
-                                className="d-inline-block align-top"
-                            />
-                        </a>
+                        <div className="navbar-header navbar dual-collapse2">
+                            <a href="https://www.nsf.gov/" className="navbar">
+                                <img
+                                    alt=""
+                                    src={NSF}
+                                    width="40"
+                                    height="40"
+                                    className="d-inline-block align-top"
+                                />
+                            </a>
 
-                        <a href="https://www.tacc.utexas.edu" className="navbar-left">
-                            <img
-                                alt=""
-                                src={TACC}
-                                width=""
-                                height="26"
-                                className="d-inline-block align-top"
-                            />
-                        </a>
-                        <a href="/" className="navbar-left">
-                            <img
-                                alt=""
-                                src={FRONTERA}
-                                width=""
-                                height="26"
-                                className="d-inline-block align-top"
-                            />
-                        </a>
+                            <a href="https://www.tacc.utexas.edu" className="navbar">
+                                <img
+                                    alt=""
+                                    src={TACC}
+                                    width=""
+                                    height="26"
+                                    className="d-inline-block align-top"
+                                />
+                            </a>
+
+                            <a href="/" className="navbar">
+                                <img
+                                    alt=""
+                                    src={FRONTERA}
+                                    width=""
+                                    height="26"
+                                    className="d-inline-block align-top"
+                                />
+                            </a>
                         </div>
 
-                    
-                    
-                    </nav>
-                    <ul>
+                        <div className="collapse navbar-collapse" id="main-navigation">
+                            <ul className="nav">
+                                <li className="nav-link"><Link to='/Main'>Home</Link></li>
+                                <li className="nav-link"><Link to='/Training'>Training</Link></li>
+                                <li className="nav-link"><Link to='/User'>User Guide</Link></li>
+                                <li className="nav-link"><Link to='/Allocations'>Allocations</Link></li>
+                                <li className="nav-link"><Link to='/Fellowships'>Fellowships</Link></li>
+                                <li className="nav-link"><Link to='/News'>News</Link></li>
+                                <li className="nav-link"><Link to='/About'>About</Link></li>
+                                <li className="nav-link"><Link to='/Help'>Help</Link></li>
+                            </ul>
+                        </div>
+
                         
                     
-                        <Link to='/Main'>Home</Link>
-                        <Link to='/Training'>Training</Link>
-                        <Link to='/User'>User Guide</Link>
-                        <Link to='/Allocations'>Allocations</Link>
-                        <Link to='/Fellowships'>Fellowships</Link>
-                        <Link to='/News'>News</Link>
-                        <Link to='/About'>About</Link>
-                        <Link to='/Help'>Help</Link>
-                    </ul>
-                </div>
+                    </nav>
+                    
+                
             
         )
     }
 }
 
-
+// const linkStyle = {
+//  color: "#FFFFFF",
+//  fontFamily: "bentonSansMedium"
+// }
     
 
 
