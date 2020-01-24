@@ -44,8 +44,7 @@ export default class Nav extends Component {
 
                 <div className="collapse navbar-collapse" id="main-navigation">
                     <ul className="nav">
-                        <li className="nav-link"><Link to='/Main'></Link></li>
-
+                        <li className="nav-link"><Link to='/Main'>Home</Link></li>
                         <li className="nav-link"><Link to='/Training'>Training</Link></li>
                         <li className="nav-link"><Link to='/User'>User Guide</Link></li>
                         <li className="nav-link"><Link to='/Allocations'>Allocations</Link></li>
